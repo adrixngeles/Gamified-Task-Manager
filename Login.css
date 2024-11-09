@@ -1,0 +1,62 @@
+/* Login.css */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(241, 233, 210, 0.95);
+    border: 8px solid #d49f2e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    color: #4B0082;
+  }
+  
+  .auth-title {
+    font-size: 2rem;
+    color: #4B0082;
+    font-family: Papyrus;
+  }
+  
+  .auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #8B4513;
+    font-size: 1rem;
+  }
+  
+  .auth-button {
+    padding: 10px 20px;
+    background: #8B4513;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .toggle-auth-mode {
+    background: none;
+    border: none;
+    color: #4B0082;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 15px;
+  }
+  
+  .auth-error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  .auth-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
