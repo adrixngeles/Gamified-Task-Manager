@@ -1,0 +1,21 @@
+{
+  "name": "account-database",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.6.3",
+    "openai": "^4.71.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
