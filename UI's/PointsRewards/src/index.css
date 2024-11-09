@@ -1,0 +1,122 @@
+/* Container to center the UI on the screen */
+.habit-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Main container */
+.habit-hero {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+.tab-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Points and gauge section */
+.points-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.points-display h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.gauge-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.half-gauge {
+  width: 150px;
+  height: 75px;
+  background: conic-gradient(
+      green calc(var(--points) * 1%), 
+      lightgrey 0
+  );
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  overflow: hidden;
+}
+
+.gauge-image img {
+  margin-top: 10px;
+  width: 60px;
+}
+
+/* Divider line */
+.divider {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+/* Rewards section */
+.rewards-section {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.rewards-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rewards-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reward-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.reward-item input[type="text"] {
+  flex: 2;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.reward-item input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.reward-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}

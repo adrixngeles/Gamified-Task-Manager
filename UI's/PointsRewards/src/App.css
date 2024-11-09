@@ -1,0 +1,181 @@
+/* Background styling for fantasy elements */
+.habit-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #2c3e50, #4a2a73, #6f42c1); /* gradient with fantasy colors */
+  background-image: url(' '); /* light background image for a fantasy vibe */
+  background-size: cover;
+  background-position: center;
+  color:#333
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/great-treasure-dungeon-illustration_1031776-54094.jpg?semt=ais_hybrid'); /* Use a playful, game-like background */
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Main container styling */
+.habit-hero {
+  max-width: 500px;
+  width: 90%;
+  background-color: #ecc164ea; /* Semi-transparent white background */
+  padding: 30px;
+  border: 8px solid #d49f2e;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4B0082; /* soft gold text for fantasy */
+  font-family: Papyrus; /* fantasy-inspired font */
+}
+
+.tab-button {
+  font-size: 1.2rem;
+  background: #d49f2e;
+  border: 2px solid #4B0082;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #4B0082;
+  cursor: pointer;
+}
+
+/* Points and gauge section styling */
+.points-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.points-display {
+  text-align: center;
+}
+
+.points-display h2 {
+  font-size: 40px;
+  font-family: 'Copperplate';
+  margin: 0;
+  color: #4B0082;
+}
+
+.points-display p {
+  color: #7e2121;
+  font-family: 'Papyrus', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Fantasy-style gauge */
+.gauge-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.half-gauge {
+  width: 150px;
+  height: 75px;
+  background: conic-gradient(
+      #d4af0a calc(var(--points) * 1%), 
+      #e90b0bbb 0
+  );
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Soft glow for fantasy feel */
+}
+
+.gauge-image img {
+  margin-top: 20px;
+  width: 80px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Divider line */
+.divider {
+  margin: 10px 0;
+  border: 1.5px solid #d49f2e;
+}
+
+/* Rewards section */
+.rewards-section {
+  text-align: left;
+  padding-top: 0px;
+  color: #4B0082;
+}
+
+.rewards-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Papyrus';
+}
+
+.rewards-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reward-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.reward-item input[type="text"] {
+  flex: 2;
+  padding: 5px;
+  font-size: px;
+  border: 2px solid #8b5619;
+  border-radius: 4px;
+  font-family: 'Copperplate';
+  font-weight: bold;
+  background-color: #e9cf7b;
+  color: #7e2121;
+}
+
+.reward-item input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #FFD700;
+  border-radius: 4px;
+  background-color: #8B4513;
+  color: #FFD700;
+}
+
+.reward-item button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid #FFD700;
+  background-color: #8B4513;
+  color: #FFD700;
+}
+
+.reward-item button:hover {
+  background-color: #eea230d8;
+}

@@ -1,0 +1,115 @@
+/* App.css */
+
+/* Background styling */
+body {
+  background-image: url('https://external-preview.redd.it/t6QF6W_IsVOcgzooxhxfnB-6o_TcGiVy5ng5tORNAxg.png?format=pjpg&auto=webp&s=648ab44172042f7537066da1161ac3bda5da8dbf'); /* Use a playful, game-like background */
+  background-size: cover ;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ffffffd9;
+  font-family: Arial, sans-serif;
+}
+
+.habit-hero-leaderboard {
+  width: 500px; /* Increased width */
+  height: 550px; /* Adjusted height */
+  background: #ecc164ea;
+  border: 8px solid #d49f2e;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 1px;
+  position: relative; /* Allows positioning of the tab button inside */
+  overflow-y: auto;
+}
+
+/* Tab button styling within the window */
+.tab-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  background: #d49f2e;
+  border: 2px solid #4B0082;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #4B0082;
+  cursor: pointer;
+  
+}
+
+/* Header styling */
+.header .title {
+  font-size: 2.5rem;
+  color: #4B0082;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Papyrus';
+}
+
+/* Leaderboard and Party Members styling */
+.leaderboard-section, .party-members-section {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaderboard-section h2, .party-members-section h2 {
+  font-size: 1.5rem;
+  color: #8d0909;
+  margin-bottom: 10px;
+  font-weight:bold;
+  font-family: 'Papyrus';
+}
+
+.leaderboard-list, .party-members-list {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard-item, .party-member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #e9cf7b;
+  border: 2px solid #8b5619;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-family: 'Copperplate';
+  font-size: 16x;
+  color: #423333;
+}
+
+.leaderboard-item .rank {
+  font-weight: bold;
+  font-size: 19;
+  color: #d49e0a;
+}
+
+.leaderboard-item .username, .party-member-item .username {
+  flex: 1;
+  text-align: center;
+  font-family: 'Copperplate', ;
+  font-weight: bold;
+  color: #5a2323;
+}
+
+.leaderboard-item .points {
+  color: #d49e0a;
+  font-weight: bold;
+}
+
+.party-members-section {
+  margin-top: 10px;
+}
+
+.party-member-item {
+  background: #e9cf7b;
+  font-family: 'Copperplate', ;
+  font-weight: bold;
+  color: #7e2121;
+}

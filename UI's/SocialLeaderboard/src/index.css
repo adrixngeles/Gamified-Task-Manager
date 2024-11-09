@@ -1,0 +1,106 @@
+/* App.css */
+
+/* Background styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  margin: 0;
+  background-color: #f0f0f5;
+  font-family: Arial, sans-serif;
+}
+
+.habit-hero-leaderboard {
+  width: 1100px; /* Increased width */
+  height: 550px; /* Adjusted height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative; /* Allows positioning of the tab button inside */
+  overflow-y: auto;
+}
+
+/* Tab button styling within the window */
+.tab-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  background: #6f42c1;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #4B0082;
+}
+
+/* Header styling */
+.header .title {
+  font-size: 2rem;
+  color: #6f42c1;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Cinzel', serif;
+}
+
+/* Leaderboard and Party Members styling */
+.leaderboard-section, .party-members-section {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leaderboard-section h2, .party-members-section h2 {
+  font-size: 1.5rem;
+  color: #4B0082;
+  margin-bottom: 10px;
+  font-family: 'Cinzel', serif;
+}
+
+.leaderboard-list, .party-members-list {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard-item, .party-member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f8f0e3;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.leaderboard-item .rank {
+  font-weight: bold;
+  color: #4B0082;
+}
+
+.leaderboard-item .username, .party-member-item .username {
+  flex: 1;
+  text-align: center;
+  color: #333;
+}
+
+.leaderboard-item .points {
+  color: #6f42c1;
+}
+
+.party-members-section {
+  margin-top: 10px;
+}
+
+.party-member-item {
+  background: #e3f7ff;
+  color: #333;
+}
