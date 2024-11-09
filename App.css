@@ -1,0 +1,116 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/b5/c4/8a/b5c48aa6bba344fbbe584db1977e2d96.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  padding: 20px;
+  background: rgba(241, 233, 210, 0.95);
+  border: 8px solid #d49f2e;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Sidebar toggle class */
+.container.shifted {
+  transform: translateX(300px);
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4B0082;
+  font-family: Papyrus;
+}
+
+.tab-button {
+  font-size: 1.2rem;
+  color: #4B0082;
+  background: #d49f2e;
+  border: 2px solid #4B0082;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Complexity Button Styling */
+.complexity-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.complexity-button {
+  background: #d49f2e;
+  border: 2px solid #FFD700;
+  color: #4B0082;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.complexity-button.active {
+  background-color: #FFD700;
+  color: #4B0082;
+}
+
+/* Sidebar specific styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.task-list-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
